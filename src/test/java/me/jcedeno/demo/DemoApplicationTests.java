@@ -87,7 +87,7 @@ class DemoApplicationTests {
 
 	
 	@Test
-	void test_failToConvertAnnotatedField_id() {
+	void test_succeedsConvertionWithAnnotationField_id() {
 		List<TransactionFour> rest = repo.getTransactionsFour("2023-10-01");
 		
 		assertEquals(1, rest.size());
